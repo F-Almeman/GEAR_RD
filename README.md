@@ -1,6 +1,6 @@
 # GEAR_RD
 
-This repository is created for the work **3D-EX: A Unified Dataset of Definitions and Dictionary Examples** that is submitted to COLING 2025.
+This repository is created for the work **GEAR: A Simple \textsc{Generate, Embed, Average and Rank} Approach for Unsupervised Reverse Dictionary** that is submitted to COLING 2025.
 
 
 # 1. Datasts #
