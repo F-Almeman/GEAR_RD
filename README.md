@@ -7,7 +7,7 @@ This repository is created for the work **3D-EX: A Unified Dataset of Definition
 
 ## 1.1 3D-EX
 
-From [3D-EX] dataset ([Almeman et al., 2023](https://aclanthology.org/2023.ranlp-1.8/)), is a unified resource containing several dictionaries in the format of (Term, Definition, Example, Source), we retrieved all the definitions along with their corresponding terms, examples and sources, creating <definition, [list_of_terms_defined_by_that_definition], [list_of_examples],  [list_of_sources]> tuples. [dataset.csv](https://drive.google.com/uc?export=download&id=1TdVx9Pk3SQ16vWkr8WBi6SLpKMV9tIm6)
+From 3D-EX dataset ([Almeman et al., 2023](https://aclanthology.org/2023.ranlp-1.8/)), is a unified resource containing several dictionaries in the format of (Term, Definition, Example, Source), we retrieved all the definitions along with their corresponding terms, examples and sources, creating <definition, [list_of_terms_defined_by_that_definition], [list_of_examples],  [list_of_sources]> tuples. [dataset.csv](https://drive.google.com/uc?export=download&id=1TdVx9Pk3SQ16vWkr8WBi6SLpKMV9tIm6)
 
 ```
 python3 get_definitions.py -d 3dex.csv -o datasets
