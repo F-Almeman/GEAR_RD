@@ -51,7 +51,7 @@ python3 rd_with_llm.py -s "datasets/WordNet_test.csv" -t "3dex" -m "gpt-4o-mini"
 This script integrates the LLM-based approach with embedding models to create GEAR.
 
 ```
-python3 rd_with_gear.py -s "datasets/3dex_WordNet_test_gpt-4o-mini_prompt_2.csv" -t "3dex" -o outputs
+python3 rd_with_gear.py -s "outputs/3dex_WordNet_test_gpt-4o-mini_prompt_2.csv" -t "3dex" -o outputs
 ```
 -s: dataset input file (the output file from LLM-based approach) <br/>
 -t: dataset type which are 3dex or hill (default="hill") <br/>
