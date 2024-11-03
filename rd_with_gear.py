@@ -74,6 +74,6 @@ if __name__ == '__main__':
             
     df["PREDICTED_TERMS_BY_EMBEDDINGS"] =  pred_terms
     df["EMBEDDING_HITS"] =  hits_column
-    output_file = os.path.join(args.output_path, f"{args.dataset_type}_{Path(args.dataset_split).stem}_top_{args.number_terms}_nearest_neighbors_sbert.csv")
+    output_file = os.path.join(args.output_path, f"{Path(args.dataset_split).stem}_top_{args.number_terms}_nearest_neighbors_sbert.csv")
     df.to_csv(output_file, index=False)
 
