@@ -214,7 +214,7 @@ if __name__ == '__main__':
     parser.add_argument('-m', '--model', help='The llm model', default="gpt-4o-mini")
     parser.add_argument('-k', '--number_terms', help='Number of generated terms', type=int, default=5)
     parser.add_argument('-o', '--output_path', help='Path to the output file', required=True)
-    parser.add_argument('-d', '--dictionary', help='dictionary name', default="random")
+    parser.add_argument('-d', '--dictionary', help='dictionary name', default="Hill seen")
     parser.add_argument('-p', '--prompt', help='prompt number', type=int, default=1)
     parser.add_argument('--save_interval', help='Save progress after this many rows', type=int, default=10)
 
