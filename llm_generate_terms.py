@@ -256,25 +256,13 @@ if __name__ == '__main__':
         pred_ex_column = df['PREDICTED_EXAMPLES'].tolist() if 'PREDICTED_EXAMPLES' in df.columns else []
     #####################################################################################
     
-    '''
     openai.api_key = <YOUR KEY>
     
 
     dictionary_description = <DICTIONARY DESCRIPTION>
     
     dictionary_examples = <DICTIONARY EXAMPLES>
-    '''
-    
-    openai.api_key = "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"
-    
 
-    dictionary_description = """WordNet is an electronic lexical database for English that organises words in groups of synonyms called synsets. 
-    synset is described by its definition, surface forms (lemmas), examples of usage (where available), and the relations between synsets.
-     WN’s primary use in NLP is as a sense inventory."""
-     
-    dictionary_examples = """EXAMPLE 1: (Definition: 'broad in the beam', terms: ['beamy']]),
-    EXAMPLE 2: (Definition: 'providing sophisticated amusement by virtue of having artificially (and vulgarly) mannered or banal or sentimental qualities', terms:['camp', 'campy'])"""
-    
 
     for idx in range(start_idx, len(df)):
     
