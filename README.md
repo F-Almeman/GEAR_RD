@@ -33,10 +33,10 @@ python3 split_dataset.py -d datasets/dataset.csv -o datasets -s "WordNet"
 
 ## 2.1 LLM-based approach 
 
-This script is to generate terms by a LLM to be used for the reverse dictionary task. Given a datset and its desciption and some examples, k terms will be generated based on the specified prompt. 
+This script performs a reverse dictionary task using a large language model (LLM). Given a dataset along with its description and examples, it generates k terms based on a specified prompt, which are then compared to the gold term(s).
 
 ```
-python3 rd_with_llm.py -s "datasets/WordNet_test.csv" -t "3dex" -m "gpt-4o-mini" -k 5 -o datasets  -d "WordNet" -p 2
+python3 rd_with_llm.py -s "datasets/WordNet_test.csv" -t "3dex" -m "gpt-4o-mini" -k 5 -o outputs  -d "WordNet" -p 2
 ```
 -s: dataset split file <br/>
 -t: dataset type which are 3dex or hill (default="hill") <br/>
@@ -48,15 +48,16 @@ python3 rd_with_llm.py -s "datasets/WordNet_test.csv" -t "3dex" -m "gpt-4o-mini"
 
 ## 2.2 GEAR (LLM-based + Embeddings) 
 
-This script is to generate terms by a LLM to be used for the reverse dictionary task. Given a datset and its desciption and some examples, k terms will be generated based on the specified prompt. 
+This script integrates the LLM-based approach with embedding models to create GEAR.
 
 ```
-python3 rd_with_gear.py -s "datasets/WordNet_test.csv" -t "3dex" -m "gpt-4o-mini" -k 5 -o datasets  -d "WordNet" -p 2
+python3 rd_with_gear.py -s "datasets/3dex_WordNet_test_gpt-4o-mini_prompt_2.csv" -t "3dex" -o outputs
 ```
 -s: dataset input file (the output file from LLM-based approach) <br/>
+-t: dataset type which are 3dex or hill (default="hill") <br/>
 -m: embeddings model (default='sentence-transformers/all-MiniLM-L6-v2') <br/>
+-k: number of top nearest terms (default=100) <br/>
 -o: output folder <br/>
-
 
 # 3. Evaluation
 
