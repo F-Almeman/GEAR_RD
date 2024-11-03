@@ -310,7 +310,7 @@ if __name__ == '__main__':
             save_progress(df.iloc[:idx + 1], temp_output_path)
 
     # Save final output
-    final_output_path = os.path.join(args.output_path, f"{args.dataset_type}_{Path(args.dataset_split).stem}_{args.model}_prompt_{args.prompt}_llm_rd_dataset.csv")
+    final_output_path = os.path.join(args.output_path, f"{args.dataset_type}_{Path(args.dataset_split).stem}_{args.model}_prompt_{args.prompt}.csv")
     save_progress(df, final_output_path)
     print(f"Final output saved to {final_output_path}")
 
