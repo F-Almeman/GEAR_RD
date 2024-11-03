@@ -61,4 +61,12 @@ python3 rd_with_gear.py -s "datasets/3dex_WordNet_test_gpt-4o-mini_prompt_2.csv"
 
 # 3. Evaluation
 
+In the evaluation step, we use MRR and Precision@k for the 3D-EX dataset. For the Hill dataset, we evaluate using Accuracy@(1/10/100), median rank, and standard deviation rank.
+```
+python3 eval_rd.py -d "outputs/hill_data_desc_c_gpt-4o-mini_prompt_3_top_100_nearest_neighbors.csv"
+```
+-s: dataset input file (the output file from LLM-based approach or GEAR) <br/>
+-t: dataset type, either 3dex or hill (default="hill") <br/>
+-r: reverse dictionary method, either llm or gear (default="gear")
+
 
